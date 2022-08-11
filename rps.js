@@ -10,13 +10,14 @@ let computerSelection = getComputerChoice
 //debug helper
 console.log(computerSelection)
 
-//debug helper
+/*let playerSelection = prompt('Choose paper, rock, or scissors', 'default').toUpperCase();*/
+
 let playerSelection = 'paper'
 
 //debug helper
 console.log(playerSelection)
 
-//if else statement 
+//if else statement to determine winner
 function playround(playerSelection, computerSelection) {
   if (computerSelection === 'rock' && playerSelection === 'paper') {return "You win"}
    else if (computerSelection === 'rock' && playerSelection === 'scissors') {return "You lose"}
@@ -30,4 +31,21 @@ function playround(playerSelection, computerSelection) {
    else {return 'invalid'}
 }
 
+//log result for player to see
 console.log(playround(playerSelection, computerSelection))
+
+//variables to keep scores
+let playerScore = 0
+let computerScore = 0
+
+for (let i = 1; i < 5; i++) 
+{ let game = console.log(playround(playerSelection, computerSelection))}
+
+  if (game === "You win") {return (playerScore++)}
+  else if (game === "You lose") {return (computerScore++)}
+  else if (game === "Draw") {return (playerScore + 0, computerScore + 0)}
+  else {return "oopsie"}
+
+console.log(playerScore)
+
+console.log(computerScore)
