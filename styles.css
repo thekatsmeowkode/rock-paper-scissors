@@ -1,3 +1,45 @@
-.title {display:flex; justify-content:center; i}
+.title {
+    display:flex; 
+    justify-content:center;
+    margin: 20px auto}
 
-.titletext {font-size: 60px; color:red}
+.titletext {
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-size: 60px; 
+    color:black}
+
+.buttonContainer {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap: 25px;
+}
+
+.scoreContainer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.choiceContainer {
+    font-size:40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 20px auto;
+    gap:30px;
+
+}
+
+
+.playerScore, .computerScore {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black;
+    display:flex;
+    gap: 35px;
+
+
+}
