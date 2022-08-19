@@ -2,26 +2,28 @@ let choices = ['rock', 'paper', 'scissors'];
 
 let playerScore = 0
 let computerScore = 0
-
-var getComputerChoice = choices[Math.floor(Math.random() * choices.length)];
+//var getComputerChoice = choices[Math.floor(Math.random() * choices.length)];
 
 
 let ChangeTextRock = () => {
   let  rockDisplayChoice = document.querySelector('.pChoiceOutput'); 
   rockDisplayChoice.textContent = "Rock";
-  playerSelection = "rock"}
+  let playerSelection = "rock"
+  game();}
   //pChoiceOutput.textContent="rock"}
   
 let ChangeTextPaper = () => {
     let paperDisplayChoice = document.querySelector('.pChoiceOutput'); 
     paperDisplayChoice.textContent = "Paper";
-    playerSelection= "paper";}
+    let playerSelection= "paper";
+    game();}
     //pChoiceOutput.textContent="paper"}
   
 let ChangeTextScissors = () => {
     let scissorsDisplayChoice = document.querySelector('.pChoiceOutput'); 
     scissorsDisplayChoice.textContent = "Scissors";
-    playerSelection = "scissors"}
+    let playerSelection = "scissors";
+    game();}
     //pChoiceOutput.textContent="scissors"}
 
 const rockButton = document.querySelector('.rockbutton');
@@ -38,9 +40,8 @@ while (playerScore<5 && computerScore<5)
 { let i=0
   var getComputerChoice = choices[Math.floor(Math.random() * choices.length)];
   let computerSelection = getComputerChoice;
- 
-  var paragraph = document.getElementsByClassName("cChoiceOutput")
-  paragraph.textContent = (`${computerSelection}`)
+  var computerDisplayChoice = document.querySelector(".cChoiceOutput")
+  computerDisplayChoice.textContent = (`${computerSelection}`)
 
 function playround(playerSelection, computerSelection) {
       if (computerSelection === 'rock' && playerSelection === 'paper') { return playerScore++, console.log("You win")}
@@ -55,9 +56,6 @@ function playround(playerSelection, computerSelection) {
       else { return 'invalid' };
     }
 
-
 playround(playerSelection, computerSelection);
 i++;
 }}
-
-game();
