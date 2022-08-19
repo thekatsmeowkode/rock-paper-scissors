@@ -1,15 +1,11 @@
-//define 3 possible choice variables
 let choices = ['rock', 'paper', 'scissors'];
 
-//variables to keep scores
- let playerScore = 0
- let computerScore = 0
+let playerScore = 0
+let computerScore = 0
 
-//make a way to generate random  computerChoice
-  var getComputerChoice = choices[Math.floor(Math.random() * choices.length)];
+var getComputerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-//if else statement to determine winner
-  function playround(playerSelection, computerSelection) {
+function playround(playerSelection, computerSelection) {
     if (computerSelection === 'rock' && playerSelection === 'paper') { return playerScore++, console.log("You win")}
     else if (computerSelection === 'rock' && playerSelection === 'scissors') { return computerScore++, console.log("You lose")}
     else if (computerSelection === 'rock' && playerSelection === 'rock') { return console.log("Draw" )}
