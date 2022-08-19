@@ -4,37 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class = "bigContainer">
       <div class = "title">
-        <h1>The Wisdom Of Rock Paper Scissors </h1>
+        <h1 class="titletext">The Wisdom Of Rock Paper Scissors </h1>
       </div>
-    <div class = "buttonContainer">
-      <div class="rock">
-        <img src="rock.png" alt ="picture of a fist making rock symbol">
+      <div class = "buttonContainer">
+        <div class="rock">
+          <button><img class = "rockbutton" src="rock.png" alt ="picture of a fist making rock symbol"></button>
+        </div>
+        <div class = "paper">
+          <button><img src="paper.png" alt="picture of hand making paper symbol"></button>
+        </div>
+        <div class = "scissors">
+          <button><img src="scissors.png" alt="picture of hand making scissor symbol"></button>
+        </div>
       </div>
-      <div class = "paper">
-        <img src="paper.png" alt="picture of hand making paper symbol">
+    <div class = "choiceContainer">
+      <div class = "playerChoice">
+        <p>Player Choice:</p>
       </div>
-      <div class = "scissors">
-        <img src="scissors.png" alt="picture of hand making scissor symbol">
+      <div class = "computerChoice">
+        <p>Computer Choice:</p>
       </div>
+    </div>
     <div class = "scoreContainer">
-      <div class = "player score">
+      <div class = "playerScore">
         <p>Player Score:</p>
         <p></p>
       </div>
-      <div class = "computer score">
+      <div class = "computerScore">
         <p>Computer Score:</p>
         <p></p>
       </div>
-    </div>
-    </div>
+  </div>
       
-    </div>
+</div>
 	<script src="rps.js"></script>
   </body>
 </html>
