@@ -19,6 +19,9 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    gap: 10px;
+    flex-direction: column;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 .choiceContainer {
@@ -29,7 +32,7 @@
     justify-content:center;
     align-items:center;
     margin: 20px auto;
-    gap:30px;
+    gap:100px;
 
 }
 
@@ -42,4 +45,8 @@
     gap: 35px;
 
 
+}
+
+.pChoiceOutput, .cChoiceOutput {
+text-align:center
 }

@@ -56,8 +56,8 @@ function drawOutput() {
 }
 
 function checkScore(playerScore, computerScore) {
-  if (playerScore == 5) {window.confirm('congratulations, you win!'); location.reload()}
-  else if (computerScore == 5) {window.confirm('If at first you don"t succeed, try, try again.  You lost.'); location.reload();}
+  if (playerScore == 5) {window.confirm('Congratulations, you win! Remember: "In life, winning and losing will both happen.  What is never acceptable is quitting. -Magic Johnson"'); location.reload()}
+  else if (computerScore == 5) {window.confirm('Sorry, you lost. "Yesterday is not ours to recover, but tomorrow is ours to win or lose. -Lyndon B Johnson"'); location.reload();}
   else {}}
 
 
