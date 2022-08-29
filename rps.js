@@ -8,6 +8,7 @@ let pChoiceBox = document.querySelector('.pChoiceOutput')
 let cChoiceBox = document.querySelector('.cChoiceOutput')
 let pScoreBox = document.querySelector('.pScoreOutput')
 let cScoreBox = document.querySelector('.cScoreOutput')
+let quoteOutput = document.querySelector('#quoteBox')
 
 function makeComputerChoice() {
   let choices = ['rock', 'paper', 'scissors'];
@@ -42,17 +43,20 @@ function winnerOutput() {
   playerScore++;
   checkScore(playerScore, computerScore);
   pScoreBox.innerHTML = playerScore;
-  cScoreBox.innerHTML = computerScore}
+  cScoreBox.innerHTML = computerScore;
+  quoteOutput.textContent= 'WIN! Success is not final; failure is not fatal: It is the courage to continue that counts. — Winston S. Churchill'}
 function loserOutput() {
   computerScore++;
   checkScore(playerScore, computerScore);
   pScoreBox.innerHTML = playerScore;
-  cScoreBox.innerHTML = computerScore;}
+  cScoreBox.innerHTML = computerScore;
+  quoteOutput.textContent= 'LOSE! Develop success from failures. Discouragement and failure are two of the surest stepping stones to success. —Dale Carnegie'}
   
 function drawOutput() {
   checkScore(playerScore, computerScore);
   pScoreBox.innerHTML = playerScore;
   cScoreBox.innerHTML = computerScore;
+  quoteOutput.textContent= "TIE! Don\'t settle for average. Bring your best to the moment. Then, whether it fails or succeeds, at least you know you gave all you had. —Angela Bassett"
 }
 
 function checkScore(playerScore, computerScore) {
@@ -60,63 +64,3 @@ function checkScore(playerScore, computerScore) {
   else if (computerScore == 5) {window.confirm('Sorry, you lost. "Yesterday is not ours to recover, but tomorrow is ours to win or lose. -Lyndon B Johnson"'); location.reload();}
   else {}}
 
-
-// let ChangeTextRock = () => {
-//   let rockDisplayChoice = document.querySelector('.pChoiceOutput');
-//   rockDisplayChoice.textContent = "Rock";
-//   let playerSelection = "rock"
-//   let computerSelection = choices[Math.floor(Math.random() * choices.length)];
-//   let computerDisplayChoice = document.querySelector(".cChoiceOutput")
-//   computerDisplayChoice.textContent = (`${computerSelection}`)
-//   playround();
-// }
-
-// let ChangeTextPaper = () => {
-//   let paperDisplayChoice = document.querySelector('.pChoiceOutput');
-//   paperDisplayChoice.textContent = "Paper";
-//   let playerSelection = "paper";
-//   let getComputerChoice = choices[Math.floor(Math.random() * choices.length)];
-//   let computerSelection = getComputerChoice;
-//   let computerDisplayChoice = document.querySelector(".cChoiceOutput")
-//   computerDisplayChoice.textContent = (`${computerSelection}`)
-//   playround();
-// }
-// //pChoiceOutput.textContent="paper"}
-
-// let ChangeTextScissors = () => {
-//   let scissorsDisplayChoice = document.querySelector('.pChoiceOutput');
-//   scissorsDisplayChoice.textContent = "Scissors";
-//   let playerSelection = "scissors";
-//   let computerSelection = choices[Math.floor(Math.random() * choices.length)];
-//   let computerDisplayChoice = document.querySelector(".cChoiceOutput")
-//   computerDisplayChoice.textContent = (`${computerSelection}`)
-//   playround();
-// }
-// //pChoiceOutput.textContent="scissors"}
-
-// const rockButton = document.querySelector('.rockbutton');
-// rockButton.addEventListener('click', ChangeTextRock)
-
-// const paperButton = document.querySelector('.paperbutton');
-// paperButton.addEventListener('click', ChangeTextPaper)
-
-// const scissorButton = document.querySelector('.scissorbutton');
-// scissorButton.addEventListener('click', ChangeTextScissors)
-
-// function playround(playerSelection, computerSelection) {
-//   if (computerSelection === 'rock' && playerSelection === 'paper') { return playerScore++, console.log("You win") }
-//   else if (computerSelection === 'rock' && playerSelection === 'scissors') { return computerScore++, console.log("You lose") }
-//   else if (computerSelection === 'rock' && playerSelection === 'rock') { return console.log("Draw") }
-//   else if (computerSelection === 'scissors' && playerSelection === 'paper') { return computerScore++, console.log("You lose") }
-//   else if (computerSelection === 'scissors' && playerSelection === 'rock') { return playerScore++, console.log("You win") }
-//   else if (computerSelection === 'scissors' && playerSelection === 'scissors') { return console.log("Draw") }
-//   else if (computerSelection === 'paper' && playerSelection === 'scissors') { return playerScore++, console.log("You win") }
-//   else if (computerSelection === 'paper' && playerSelection === 'rock') { return computerScore++, console.log("You lose") }
-//   else if (computerSelection === 'paper' && playerSelection === 'paper') { return console.log('Draw') }
-//   else { return 'invalid' };
-
-// }
-
-// let game = () => {
-//   while (playerScore<5 && computerScore<5)
-// i++;}
