@@ -1,3 +1,7 @@
+* {font-family:Arial, Helvetica, sans-serif;
+    background-color:seashell
+}
+
 .title {
     display:flex; 
     justify-content:center;
@@ -8,8 +12,7 @@
 .titletext {
     font-family:Georgia, 'Times New Roman', Times, serif; 
     font-size: 60px; 
-    color:black;
-    margin-top: 40px;}
+    color:black;}
 
 .buttonContainer {
     display:flex;
@@ -22,38 +25,48 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    gap: 10px;
-    flex-direction: column;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    gap: 75px;
 }
 
 .choiceContainer {
     font-size:40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     color:black;
     display:flex;
-    justify-content:center;
-    align-items:center;
-    margin: 20px auto;
-    gap:100px;
-
+    flex-direction:column;
+    margin: 5px 10px;
+    gap:15px;
 }
 
+button {border:none; background-color:transparent;}
 
 .playerScore, .computerScore {
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     color:black;
-    display:flex;
-    gap: 35px;
+    display: block;
+    margin: 10px 10px;
+}
 
+.playerChoice, .computerChoice {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 50px;
+    flex:1;
 }
 
 .pChoiceOutput, .cChoiceOutput {
     text-align:center
 }
 
+.pScoreOutput, .cScoreOutput {
+    font-size:50px;
+    margin: 10px 10px
+}
+
 #quoteBox {
-    font-family:Georgia, 'Times New Roman', Times, serif; 
-    font-size: 30px;
-    margin-top: 15px;}
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align:center;
+    margin-left: 50px;
+    margin-right: 50px;}

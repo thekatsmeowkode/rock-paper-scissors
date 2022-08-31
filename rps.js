@@ -26,16 +26,19 @@ clickEvent();
 function rockPic() {
   const rockImage = document.createElement('img');
   rockImage.src = "rock.png";
+  rockImage.style.width = '100px';
   document.querySelector('.playerChoicePic').appendChild(rockImage)};
 
 function paperPic() {
   const paperImage = document.createElement('img');
   paperImage.src = 'paper.png'; 
+  paperImage.style.width = '100px';
   document.querySelector('.playerChoicePic').appendChild(paperImage)}
 
 function scissorsPic() {
   const scissorsImage = document.createElement('img');
   scissorsImage.src = 'scissors.png';
+  scissorsImage.style.width = '100px';
   document.querySelector('.playerChoicePic').appendChild(scissorsImage)}
 
 function playerPictureChoice(playerSelection) {
@@ -46,16 +49,19 @@ function playerPictureChoice(playerSelection) {
 function cRockPic() {
     const rockImage = document.createElement('img');
     rockImage.src = "rock.png";
+    rockImage.style.width = '100px';
     document.querySelector('.computerChoicePic').appendChild(rockImage)};
   
 function cPaperPic() {
     const paperImage = document.createElement('img');
     paperImage.src = 'paper.png'; 
+    paperImage.style.width = '100px';
     document.querySelector('.computerChoicePic').appendChild(paperImage)}
   
 function cScissorsPic() {
     const scissorsImage = document.createElement('img');
     scissorsImage.src = 'scissors.png';
+    scissorsImage.style.width = '100px';
     document.querySelector('.computerChoicePic').appendChild(scissorsImage)}
 
 function computerPictureChoice(computerSelection) {
