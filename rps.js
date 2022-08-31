@@ -23,10 +23,52 @@ function clickEvent() {
 
 clickEvent();
 
+function rockPic() {
+  const rockImage = document.createElement('img');
+  rockImage.src = "rock.png";
+  document.querySelector('.playerChoicePic').appendChild(rockImage)};
+
+function paperPic() {
+  const paperImage = document.createElement('img');
+  paperImage.src = 'paper.png'; 
+  document.querySelector('.playerChoicePic').appendChild(paperImage)}
+
+function scissorsPic() {
+  const scissorsImage = document.createElement('img');
+  scissorsImage.src = 'scissors.png';
+  document.querySelector('.playerChoicePic').appendChild(scissorsImage)}
+
+function playerPictureChoice(playerSelection) {
+  if (playerSelection === 'rock') {return rockPic()}
+  else if (playerSelection === 'scissors') {return scissorsPic()}
+  else if (playerSelection === 'paper') {return paperPic()}}
+
+function cRockPic() {
+    const rockImage = document.createElement('img');
+    rockImage.src = "rock.png";
+    document.querySelector('.computerChoicePic').appendChild(rockImage)};
+  
+function cPaperPic() {
+    const paperImage = document.createElement('img');
+    paperImage.src = 'paper.png'; 
+    document.querySelector('.computerChoicePic').appendChild(paperImage)}
+  
+function cScissorsPic() {
+    const scissorsImage = document.createElement('img');
+    scissorsImage.src = 'scissors.png';
+    document.querySelector('.computerChoicePic').appendChild(scissorsImage)}
+
+function computerPictureChoice(computerSelection) {
+  if (computerSelection === 'rock') {return cRockPic()}
+  else if (computerSelection === 'scissors') {return cScissorsPic()}
+  else if (computerSelection === 'paper') {return cPaperPic()}}
+
 function runGame(playerSelection) {
     const computerSelection = makeComputerChoice();
-    pChoiceBox.innerHTML = playerSelection;
-    cChoiceBox.innerHTML = computerSelection;
+   // pChoiceBox.innerHTML = playerSelection;
+    playerPictureChoice(playerSelection);
+   // cChoiceBox.innerHTML = computerSelection;
+    computerPictureChoice(computerSelection)
     if (computerSelection == 'rock' && playerSelection == 'paper') {return winnerOutput()}
     else if (computerSelection === 'rock' && playerSelection === 'scissors') {return loserOutput() }
     else if (computerSelection === 'rock' && playerSelection === 'rock') {return drawOutput()}

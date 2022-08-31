@@ -1,12 +1,15 @@
 .title {
     display:flex; 
     justify-content:center;
-    margin: 20px auto}
+    flex-direction:column;
+    align-items:center;
+    margin:auto;}
 
 .titletext {
     font-family:Georgia, 'Times New Roman', Times, serif; 
     font-size: 60px; 
-    color:black}
+    color:black;
+    margin-top: 40px;}
 
 .buttonContainer {
     display:flex;
@@ -44,9 +47,13 @@
     display:flex;
     gap: 35px;
 
-
 }
 
 .pChoiceOutput, .cChoiceOutput {
-text-align:center
+    text-align:center
 }
+
+#quoteBox {
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-size: 30px;
+    margin-top: 15px;}
